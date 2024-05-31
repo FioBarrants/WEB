@@ -1,0 +1,39 @@
+.titulo {
+    font-size: 30px;
+    text-align: center;
+}
+
+body {
+    background-color: hsl(352, 84%, 88%);
+}
+
+a {
+    text-decoration: none;
+}
+
+#navegacion {
+    text-align: center;
+    font-size: 20px;
+}
+
+.noticiaslocales {
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+span {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+}
+
+#libro {
+    border-style: solid;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 5px;
+    width: 25;
+    
+}
