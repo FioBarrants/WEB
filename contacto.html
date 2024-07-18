@@ -24,6 +24,74 @@
                 <a href="contacto.html">Contacto </a>
             </nav>
         </div>
+
+        <h3> Informacion Personal</h3>
+        <br />
+
+        <div>
+            <form id="contacto" name="formulario" method="get" action="procesar.html">-
+                <p>
+                    <label for="nombre">Nombre:
+                        <!--<input>- Este elemento crea un campo de entrada-->
+                        <!--maxlength-Este atributo especifica el numero maximo de caracteres-->
+                        <input type=" text" name="nombre" maxlength="15" id="nombre">
+                    </label>
+                </p>
+                <p>
+                    <label for="clave">Clave:
+                        <!--<input>- Este elemento crea un campo de entrada-->
+                        <!--maxlength-Este atributo especifica el numero maximo de caracteres-->
+                        <input type="password" name="clave" maxlength="15" id="clave">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Correo: <input type="email" name="correo" </label>
+                </p>
+                <p>
+                    <label>
+                        Telefono: <input type="tel" name="telefono" placeholder="506-6090-8607">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Edad: <input type="number" min="13" max="100" name="edad">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Estatura: <input type="range" min="50" max="300" name="estatura" value="250">
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        Sitio Web: <input type="url" name="sitioweb" </label>
+                </p>
+
+                <div>
+
+                    <h3>
+                        Años de experiencia
+                    </h3>
+                    </br>
+                    <p>
+                        <label>Experiencia:
+                            <input type="radio" name="experiencia"
+                            value="1" checked> 1 año
+                            <input type="radio" name="experiencia"
+                            value="2" checked> 2 años
+                            <input type="radio" name="experiencia"
+                            value="3" checked> 3 años
+                            <input type="radio" name="experiencia"
+                            value="mas de 3" checked> mas de 3 años
+                        </label>
+                    </p>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
         <address>Alajuela, Costa Rica</address>
