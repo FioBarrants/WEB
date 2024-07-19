@@ -79,20 +79,60 @@
                     </br>
                     <p>
                         <label>Experiencia:
-                            <input type="radio" name="experiencia"
-                            value="1" checked> 1 año
-                            <input type="radio" name="experiencia"
-                            value="2" checked> 2 años
-                            <input type="radio" name="experiencia"
-                            value="3" checked> 3 años
-                            <input type="radio" name="experiencia"
-                            value="mas de 3" checked> mas de 3 años
+                            <input type="radio" name="experiencia" value="1" checked> 1 año
+                            <input type="radio" name="experiencia" value="2" checked> 2 años
+                            <input type="radio" name="experiencia" value="3" checked> 3 años
+                            <input type="radio" name="experiencia" value="mas de 3" checked> mas de 3 años
                         </label>
                     </p>
                 </div>
+
+                <div>
+                    <h3>Fecha de nacimiento</h3>
+                    <!--date - Este valor genera un campi de entrada para insertar una fecha-->
+                    <input type="date" id="fechaInput">
+                </div>
+
+                <div>
+                    <h3>Color</h3>
+                    <!--Color - Este valor genera un campo de entradapara insertar color-->
+                    <input type="color" name="micolor" value="#99BB00">
+                </div>
+
+                <div>
+                    <!--<texttarea>- Este elemento crea un campo de entrada para insertar multiples lineas de texto.
+                        El tamaño se puede declarar en numeros enteros usando los atributos rows y cols-->
+                    <p>
+                        <label>
+                            Texto: <textarea name="texto" cols="50 " rows="6"></textarea>
+                        </label>
+                    </p>
+                </div>
+                <div>
+                    <!--<select>- Este elemento crea una lista de opciones que el usuario puede elegir. 
+                        Trabaja junto con el elemento <option> para definir cada opcion-->
+                    <label for="listado">Libros: </label>
+                    <select name="libro" id="listado">
+                        <option value="1">It</option>
+                        <option value="2">Carrie</option>
+                        <option value="3">El Resplandor</option>
+                        <option value="4">Misery</option>
+                    </select>
+                </div>
+
+                <div>
+                    <!-- submit- Este valor genera un boton para enviar el formulario-->
+                     <p><input type="submit" value="Enviar"></p>
+                </div>
+
             </form>
         </div>
     </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
         <address>Alajuela, Costa Rica</address>
         <small>&copy; Derechos reservados 2024</small>
@@ -100,3 +140,16 @@
 </body>
 
 </html>
+
+<script>
+    // Obtener la fecha actual en formato ISO (YYYY-MM-DD)
+    let fechaActual = new Date().toISOString().split('T')[0];
+
+    // Seleccionar el input de tipo date por su ID (supongamos que tiene el ID 'fechaInput')
+    let fechaInput = document.getElementById('fechaInput');
+
+    // Establecer el valor del input a la fecha actual
+    fechaInput.value = fechaActual;
+
+
+</script>
